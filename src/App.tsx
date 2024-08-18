@@ -12,8 +12,6 @@ import DSCF9697 from "./assets/DSCF9697.jpg";
 import DSCF9783 from "./assets/DSCF9783.jpg";
 import DSCF9921 from "./assets/DSCF9921.jpg";
 import flower from "./assets/flower.png";
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
 import { getInViewFadeInStyle } from "./utils";
 
 function App() {
