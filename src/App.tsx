@@ -87,52 +87,46 @@ function App() {
               </div>
               <div className="text-center text-2xl mb-2">갤러리</div>
 
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-3 gap-2 auto-rows-max">
                 <PhotoProvider>
                   <PhotoView src={DSCF9139_2}>
-                    <img
-                      className="col-span-2 row-span-1 object-cover rounded-md rounded-tl-2xl"
-                      style={{ height: "-webkit-fill-available" }}
-                      src={DSCF9139_2}
-                      alt="pic1"
-                    />
+                    <div
+                      className="col-span-2 rounded-md rounded-tl-2xl relative"
+                      style={{ border: "1px solid blue" }}
+                    >
+                      <img
+                        className="absolute h-full"
+                        style={{ border: "1px solid red" }}
+                        src={DSCF9139_2}
+                        alt="pic1"
+                      />
+                    </div>
                   </PhotoView>
 
                   <PhotoView src={DSCF9377_2}>
                     <img
                       className="rounded-md rounded-tr-2xl rounded-bl-lg"
-                      style={{ height: "-webkit-fill-available" }}
                       src={DSCF9377_2}
                       alt="pic2"
                     />
                   </PhotoView>
                   <PhotoView src={DSCF9254}>
-                    <img
-                      className="rounded-md"
-                      src={DSCF9254}
-                      style={{ height: "-webkit-fill-available" }}
-                      alt="pic3"
-                    />
+                    <img className="rounded-md" src={DSCF9254} alt="pic3" />
                   </PhotoView>
                   <PhotoView src={DSCF9332_1}>
-                    <img
-                      className="col-span-2 object-cover rounded-md"
-                      style={{ height: "-webkit-fill-available" }}
-                      src={DSCF9332_1}
-                      alt="pic4"
-                    />
+                    <div className="col-span-2 rounded-md relative">
+                      <img
+                        className="absolute h-full"
+                        src={DSCF9332_1}
+                        alt="pic4"
+                      />
+                    </div>
                   </PhotoView>
                   <PhotoView src={DSCF9322}>
-                    <img
-                      style={{ height: "-webkit-fill-available" }}
-                      className="rounded-md"
-                      src={DSCF9322}
-                      alt="pic5"
-                    />
+                    <img className="rounded-md" src={DSCF9322} alt="pic5" />
                   </PhotoView>
                   <PhotoView src={DSCF9575_1}>
                     <img
-                      style={{ height: "-webkit-fill-available" }}
                       className="col-span-2 object-cover rounded-md"
                       src={DSCF9575_1}
                       alt="pic6"
@@ -140,33 +134,17 @@ function App() {
                   </PhotoView>
 
                   <PhotoView src={DSCF9617}>
-                    <img
-                      style={{ height: "-webkit-fill-available" }}
-                      className="rounded-md"
-                      src={DSCF9617}
-                      alt="pic7"
-                    />
+                    <img className="rounded-md" src={DSCF9617} alt="pic7" />
                   </PhotoView>
                   <PhotoView src={DSCF9486_1}>
-                    <img
-                      style={{ height: "-webkit-fill-available" }}
-                      className="rounded-md"
-                      src={DSCF9486_1}
-                      alt="pic8"
-                    />
+                    <img className="rounded-md" src={DSCF9486_1} alt="pic8" />
                   </PhotoView>
                   <PhotoView src={DSCF9783}>
-                    <img
-                      style={{ height: "-webkit-fill-available" }}
-                      className="rounded-md"
-                      src={DSCF9783}
-                      alt="pic9"
-                    />
+                    <img className="rounded-md" src={DSCF9783} alt="pic9" />
                   </PhotoView>
 
                   <PhotoView src={DSCF9697}>
                     <img
-                      style={{ height: "-webkit-fill-available" }}
                       className="col-span-2 object-cover rounded-md rounded-bl-2xl"
                       src={DSCF9697}
                       alt="pic10"
@@ -175,7 +153,6 @@ function App() {
 
                   <PhotoView src={DSCF9921}>
                     <img
-                      style={{ height: "-webkit-fill-available" }}
                       className="rounded-md rounded-br-2xl"
                       src={DSCF9921}
                       alt="pic11"
