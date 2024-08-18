@@ -87,7 +87,7 @@ function App() {
 
         <div className="grid grid-cols-3 gap-2">
           <img
-            className="col-span-2 object-cover rounded-md rounded-tl-2xl"
+            className="col-span-2  object-cover rounded-md rounded-tl-2xl"
             src={DSCF9139_2}
             alt="pic1"
           />
@@ -99,23 +99,23 @@ function App() {
           />
           <img className="rounded-md" src={DSCF9254} alt="pic3" />
           <img
-            className="col-span-2 object-cover rounded-md"
+            className="col-span-2  object-cover rounded-md"
             src={DSCF9332_1}
             alt="pic4"
           />
           <img className="rounded-md" src={DSCF9322} alt="pic6" />
           <img
-            className="col-span-2 object-cover rounded-md"
+            className="col-span-2  object-cover rounded-md"
             src={DSCF9575_1}
             alt="pic8"
           />
 
           <img className="rounded-md" src={DSCF9617} alt="pic9" />
-          <img className= rounded-md" src={DSCF9486_1} alt="pic7" />
-          <img className= rounded-md" src={DSCF9783} alt="pic11" />
+          <img className=" rounded-md" src={DSCF9486_1} alt="pic7" />
+          <img className=" rounded-md" src={DSCF9783} alt="pic11" />
 
           <img
-            className="col-span-2 object-cover rounded-md rounded-bl-2xl"
+            className="col-span-2  object-cover rounded-md rounded-bl-2xl"
             src={DSCF9697}
             alt="pic10"
           />
@@ -160,7 +160,7 @@ function App() {
                   </PhotoView>
                   <PhotoView src={DSCF9332_1}>
                     <img
-                      className="col-span-2 object-cover rounded-md"
+                      className="col-span-2  object-cover rounded-md"
                       src={DSCF9332_1}
                       alt="pic4"
                     />
@@ -180,18 +180,10 @@ function App() {
                     <img className="rounded-md" src={DSCF9617} alt="pic9" />
                   </PhotoView>
                   <PhotoView src={DSCF9486_1}>
-                    <img
-                      className= rounded-md"
-                      src={DSCF9486_1}
-                      alt="pic7"
-                    />
+                    <img className="rounded-md" src={DSCF9486_1} alt="pic7" />
                   </PhotoView>
                   <PhotoView src={DSCF9783}>
-                    <img
-                      className= rounded-md"
-                      src={DSCF9783}
-                      alt="pic11"
-                    />
+                    <img className="rounded-md" src={DSCF9783} alt="pic11" />
                   </PhotoView>
 
                   <PhotoView src={DSCF9697}>
