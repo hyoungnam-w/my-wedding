@@ -33,7 +33,13 @@ function App() {
         />
 
         <InView threshold={0.1}>
-          {({ inView, ref }) => {
+          {({
+            inView,
+            ref,
+          }: {
+            inView: boolean;
+            ref: React.RefObject<HTMLDivElement>;
+          }) => {
             return (
               <div
                 ref={ref}
@@ -59,7 +65,13 @@ function App() {
         </InView>
 
         <InView threshold={0.1}>
-          {({ inView, ref }) => {
+          {({
+            inView,
+            ref,
+          }: {
+            inView: boolean;
+            ref: React.RefObject<HTMLDivElement>;
+          }) => {
             return (
               <div className={getInViewFadeInStyle(inView)} ref={ref}>
                 <p className="text-center text-2xl mt-8 mb-4">결혼합니다</p>
@@ -78,7 +90,13 @@ function App() {
       </section>
 
       <InView threshold={0.1}>
-        {({ inView, ref }) => {
+        {({
+          inView,
+          ref,
+        }: {
+          inView: boolean;
+          ref: React.RefObject<HTMLDivElement>;
+        }) => {
           return (
             <section ref={ref} className={getInViewFadeInStyle(inView)}>
               <div className="flex justify-center gap-3 mb-3">
