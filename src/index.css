@@ -2,14 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "Regular";
-  src: local("RIDIBatang"), url("/fonts/RIDIBatang.otf") format("truetype");
-} */
-
 @font-face {
   font-family: "RIDIBatang";
-  src: url("src/assets/fonts/RIDIBatang.otf") format("opentype");
+  src: url("src/fonts/RIDIBatang.otf") format("opentype");
 }
 
 body {

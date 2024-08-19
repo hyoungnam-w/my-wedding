@@ -78,80 +78,106 @@ function App() {
         </InView>
       </section>
 
-      <section>
-        <div className="flex justify-center gap-3 mb-3">
-          <div className="h-1.5 w-1.5 bg-stone-200 rotate-45 transform origin-bottom-left" />
-          <div className="h-1.5 w-1.5 bg-stone-300 rotate-45 transform origin-bottom-left" />
-          <div className="h-1.5 w-1.5 bg-stone-200 rotate-45 transform origin-bottom-left" />
-        </div>
-        <div className="text-center text-2xl mb-2">갤러리</div>
-
-        <div className="grid grid-cols-3 gap-2">
-          <PhotoProvider>
-            <PhotoView src={DSCF9139_2}>
-              <div className="relative col-span-2 object-cover rounded-md rounded-tl-2xl">
-                <img className="absolute h-full" src={DSCF9139_2} alt="pic1" />
+      <InView threshold={0.1}>
+        {({ inView, ref }: any) => {
+          return (
+            <section className={getInViewFadeInStyle(inView)} ref={ref}>
+              <div className="flex justify-center gap-3 mb-3">
+                <div className="h-1.5 w-1.5 bg-stone-200 rotate-45 transform origin-bottom-left" />
+                <div className="h-1.5 w-1.5 bg-stone-300 rotate-45 transform origin-bottom-left" />
+                <div className="h-1.5 w-1.5 bg-stone-200 rotate-45 transform origin-bottom-left" />
               </div>
-            </PhotoView>
+              <div className="text-center text-2xl mb-2">갤러리</div>
 
-            <PhotoView src={DSCF9377_2}>
-              <img
-                className="rounded-md rounded-tr-2xl rounded-bl-lg"
-                src={DSCF9377_2}
-                alt="pic5"
-              />
-            </PhotoView>
-            <PhotoView src={DSCF9254}>
-              <img className="rounded-md" src={DSCF9254} alt="pic3" />
-            </PhotoView>
-            <PhotoView src={DSCF9332_1}>
-              <div className="col-span-2 rounded-md relative">
-                <img
-                  className="absolute h-full object-cover"
-                  src={DSCF9332_1}
-                  alt="pic4"
-                />
+              <div className="grid grid-cols-3 gap-2">
+                <PhotoProvider>
+                  <PhotoView src={DSCF9139_2}>
+                    <div className="relative col-span-2">
+                      <img
+                        className="absolute h-full rounded-md rounded-tl-2xl"
+                        src={DSCF9139_2}
+                        alt="pic1"
+                      />
+                    </div>
+                  </PhotoView>
+
+                  <PhotoView src={DSCF9377_2}>
+                    <img
+                      className="rounded-md rounded-tr-2xl rounded-bl-lg"
+                      src={DSCF9377_2}
+                      alt="pic2"
+                    />
+                  </PhotoView>
+                  <PhotoView src={DSCF9254}>
+                    <img className="rounded-md" src={DSCF9254} alt="pic3" />
+                  </PhotoView>
+                  <PhotoView src={DSCF9332_1}>
+                    <div className="col-span-2 relative">
+                      <img
+                        className="absolute h-full object-cover rounded-md"
+                        src={DSCF9332_1}
+                        alt="pic4"
+                      />
+                    </div>
+                  </PhotoView>
+                  <PhotoView src={DSCF9322}>
+                    <img className="rounded-md" src={DSCF9322} alt="pic5" />
+                  </PhotoView>
+                  <PhotoView src={DSCF9575_1}>
+                    <div className="relative col-span-2 object-cover">
+                      <img
+                        className="absolute h-full rounded-md"
+                        src={DSCF9575_1}
+                        alt="pic6"
+                      />
+                    </div>
+                  </PhotoView>
+
+                  <PhotoView src={DSCF9617}>
+                    <img className="rounded-md" src={DSCF9617} alt="pic7" />
+                  </PhotoView>
+                  <PhotoView src={DSCF9486_1}>
+                    <div className="relative">
+                      <img
+                        className="rounded-md absolute h-full"
+                        src={DSCF9486_1}
+                        alt="pic8"
+                      />
+                    </div>
+                  </PhotoView>
+                  <PhotoView src={DSCF9783}>
+                    <div className="relative">
+                      <img
+                        className="rounded-md absolute h-full"
+                        src={DSCF9783}
+                        alt="pic9"
+                      />
+                    </div>
+                  </PhotoView>
+
+                  <PhotoView src={DSCF9697}>
+                    <div className="relative col-span-2">
+                      <img
+                        className="absolute h-full object-cover rounded-md rounded-bl-2xl"
+                        src={DSCF9697}
+                        alt="pic10"
+                      />
+                    </div>
+                  </PhotoView>
+
+                  <PhotoView src={DSCF9921}>
+                    <img
+                      className="rounded-md rounded-br-2xl"
+                      src={DSCF9921}
+                      alt="pic11"
+                    />
+                  </PhotoView>
+                </PhotoProvider>
               </div>
-            </PhotoView>
-            <PhotoView src={DSCF9322}>
-              <img className="rounded-md" src={DSCF9322} alt="pic6" />
-            </PhotoView>
-            <PhotoView src={DSCF9575_1}>
-              <img
-                className="col-span-2 object-cover rounded-md"
-                src={DSCF9575_1}
-                alt="pic8"
-              />
-            </PhotoView>
-
-            <PhotoView src={DSCF9617}>
-              <img className="rounded-md" src={DSCF9617} alt="pic9" />
-            </PhotoView>
-            <PhotoView src={DSCF9486_1}>
-              <img className="rounded-md" src={DSCF9486_1} alt="pic7" />
-            </PhotoView>
-            <PhotoView src={DSCF9783}>
-              <img className="rounded-md" src={DSCF9783} alt="pic11" />
-            </PhotoView>
-
-            <PhotoView src={DSCF9697}>
-              <img
-                className="col-span-2 object-cover rounded-md rounded-bl-2xl"
-                src={DSCF9697}
-                alt="pic10"
-              />
-            </PhotoView>
-
-            <PhotoView src={DSCF9921}>
-              <img
-                className="rounded-md rounded-br-2xl"
-                src={DSCF9921}
-                alt="pic12"
-              />
-            </PhotoView>
-          </PhotoProvider>
-        </div>
-      </section>
+            </section>
+          );
+        }}
+      </InView>
     </main>
   );
 }
