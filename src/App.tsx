@@ -44,14 +44,12 @@ function App() {
               >
                 <div>
                   김동일 · 조명희{" "}
-                  <span className="text-stone-400 text-sm mx-4">의 아들</span>{" "}
+                  <span className="text-stone-400 text-sm mx-4">의 차남</span>{" "}
                   형남
                 </div>
                 <div className="mt-1">
                   문승덕 · 조성희{" "}
-                  <span className="text-stone-400 text-sm mx-4">
-                    의 딸<span className="invisible">인</span>
-                  </span>{" "}
+                  <span className="text-stone-400 text-sm mx-4">의 장녀</span>{" "}
                   희원
                 </div>
               </div>
