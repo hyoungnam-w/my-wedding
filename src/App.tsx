@@ -28,7 +28,7 @@ function App() {
           <div className="text-lg mt-2 mb-4">2024년 09월 08일 일요일</div>
         </div>
         <img
-          className="w-100 mx-auto rounded-xl"
+          className="md:w-1/2 mx-auto rounded-xl"
           src={DSCF9343_3}
           alt="mainImage"
         />
