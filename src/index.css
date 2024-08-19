@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "RIDIBatang";
-  src: url("/fonts/RIDIBatang.otf") format("opentype");
+  src: url("assets/fonts/RIDIBatang.otf") format("opentype");
 }
 
 body {
