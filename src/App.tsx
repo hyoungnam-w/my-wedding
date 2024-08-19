@@ -63,12 +63,13 @@ function App() {
               <div className={getInViewFadeInStyle(inView)} ref={ref}>
                 <p className="text-center text-2xl mt-8 mb-4">결혼합니다</p>
 
-                <p className="text-center mb-10">
-                  저희 두 사람, 오랜 인연 끝에 함께하는 길을 걷기로 했습니다.{" "}
+                <p className="text-center mb-10 leading-9">
+                  저희 두 사람, 오랜 인연 끝에 <br /> 함께하는 길을 걷기로
+                  했습니다. <br /> 서로를 아끼고 사랑하며, 가족의 축복 속에서
                   <br />
-                  서로를 아끼고 사랑하며, 가족의 축복 속에서 조용히 결혼식을
-                  올리려 합니다. 언제나 함께해 주셔서 감사드리며, 앞으로도
-                  따뜻한 마음으로 지켜봐 주시면 좋겠습니다
+                  조용히 결혼식을 올리려 합니다. <br /> 언제나 함께해 주셔서
+                  감사드리며, <br /> 앞으로도 따뜻한 마음으로 지켜봐 주시면
+                  좋겠습니다
                 </p>
               </div>
             );
