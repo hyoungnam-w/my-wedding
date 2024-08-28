@@ -12,12 +12,20 @@ import DSCF9617 from "./assets/DSCF9617.jpg";
 import DSCF9697 from "./assets/DSCF9697.jpg";
 import DSCF9783 from "./assets/DSCF9783.jpg";
 import DSCF9921 from "./assets/DSCF9921.jpg";
+import map from "./assets/map.png";
 import flower from "./assets/flower.png";
+import flower2 from "./assets/flower2.png";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { getInViewFadeInStyle } from "./utils";
+import { useSearchParams } from "react-router-dom";
 
 function App() {
+  const [searchParams] = useSearchParams();
+
+  const hasRestaurantsParams = searchParams.get("re");
+  const hasBankParams = searchParams.get("bk");
+
   return (
     <main className="container mx-auto border py-9 px-4 bg-stone-100 text-stone-500">
       <section>
@@ -177,6 +185,57 @@ function App() {
           );
         }}
       </InView>
+      {hasRestaurantsParams && (
+        <InView threshold={0.1}>
+          {({ inView, ref }: any) => {
+            return (
+              <section
+                className={getInViewFadeInStyle(inView)}
+                ref={ref}
+                style={{ paddingTop: "24px", paddingBottom: "16px" }}
+              >
+                <div className="text-center mt-8 mb-4">
+                  <span className="opacity-40 mb-1">Location</span>
+                  <p className=" text-xl">피로연 장소</p>
+                </div>
+                <img
+                  className="rounded-md rounded-br-2xl md:w-3/4 mx-auto"
+                  src={map}
+                  alt="restaurant"
+                />
+                <div className="flex flex-col gap-1 items-center mt-4">
+                  <div>활짝핀메밀 본점</div>
+                  <div>서울 종로구 자하문로 38</div>
+                </div>
+              </section>
+            );
+          }}
+        </InView>
+      )}
+
+      {hasBankParams && (
+        <InView threshold={0.1}>
+          {({ inView, ref }: any) => {
+            return (
+              <section
+                className={getInViewFadeInStyle(inView)}
+                ref={ref}
+                style={{ paddingTop: "12px", paddingBottom: "36px" }}
+              >
+                <div className="flex justify-center items-center mt-8 mb-4 gap-2">
+                  <img className="w-5 h-5" src={flower2} alt="flower2" />
+                  <p className="text-center text-xl">마음 전하실 곳</p>
+                  <img className="w-5 h-5" src={flower2} alt="flower2" />
+                </div>
+                <div className="flex flex-col gap-1 items-center">
+                  <div>문승덕 </div>
+                  <div>KB국민 096-24-0209-964</div>
+                </div>
+              </section>
+            );
+          }}
+        </InView>
+      )}
     </main>
   );
 }
