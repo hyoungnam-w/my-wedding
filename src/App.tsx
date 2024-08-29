@@ -204,7 +204,9 @@ function App() {
                   alt="restaurant"
                 />
                 <div className="flex flex-col gap-1 items-center mt-4">
-                  <div>활짝핀메밀 본점</div>
+                  <div className="mt-2 opacity-90">9월 8일 일요일</div>
+                  <div className="opacity-90">오후 1시30분 ~ 오후 3시</div>
+                  <div className="mt-2">활짝핀메밀 본점</div>
                   <div>서울 종로구 자하문로 38</div>
                 </div>
               </section>
